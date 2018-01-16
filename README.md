@@ -23,7 +23,7 @@ Lumen is a micro-framework by Laravel optimized for APIs as it is lighter and fa
 ```docker-compose exec app composer install```
 - Create database tables and populate them with dummy data:
 
-```docker-compose exec app php artisan:migrate --seed```
+```docker-compose exec app php artisan migrate --seed```
 
 API's endpoints can be now accessed at baseurl: http://0.0.0.0:8009/api/v1
 
