@@ -1,0 +1,36 @@
+version: '2'
+services:
+
+  # The Application
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8009:8181"
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+    environment:
+      - "DB_PORT=3306"
+      - "DB_HOST=database"
+    depends_on:
+      - database
+    links:
+      - database
+
+  # The Database
+  database:
+    image: mysql:5.6
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      - "MYSQL_DATABASE=h1blog"
+      - "MYSQL_USER=h1blog"
+      - "MYSQL_PASSWORD=h1blog"
+      - "MYSQL_ROOT_PASSWORD=h1blog"
+    ports:
+        - "33061:3306"
+
+volumes:
+  dbdata:
