@@ -21,6 +21,7 @@ API's endpoints can be now accessed at baseurl: http://0.0.0.0:8009/api/v1
 # Endpoints
 ## **GET api/v1/posts:** Fetch all blog posts.
 Optional parameters:
+
 **author_id:** int. Fetches the blog posts of a given user, eg GET *api/v1/posts?author_id=1*
 
 **order:** enum, 'asc' or 'desc'. Fetches the blog posts sorted by publication date asc or desc, eg GET *api/v1/posts?order=desc*
