@@ -7,7 +7,7 @@ More about Lumen at https://lumen.laravel.com/.
 - Clone the repo on your local machine
 ```git clone https://github.com/fgiannar/h1blog.git```
 - Move to project's directory
-```cd larablog```
+```cd h1blog```
 - Copy .env_sample  to .env and update all MAIL_* envs to match your smtp credentials and ADMIN_MAIL to your email.
 ```cp .env_sample .env```
 - Build image and start containers:
