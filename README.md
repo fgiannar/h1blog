@@ -12,6 +12,7 @@ More about Lumen at https://lumen.laravel.com/.
 ```cp .env_sample .env```
 - Build image and start containers:
 ```docker-compose build```
+
 ```docker-compose up -d```
 - Install project dependencies:
 ```docker-compose exec app composer install```
