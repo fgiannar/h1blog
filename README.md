@@ -1,7 +1,7 @@
 # h1blog
-A dead simple blog api created with Lumen.
-Lumen is a micro-framework by Laravel optimized for APIs as it is lighter and faster than Laravel.
-More about Lumen at https://lumen.laravel.com/.
+A dead simple blog API created with Lumen.
+
+Lumen is a micro-framework by Laravel optimized for APIs as it is lighter and faster than Laravel.More about Lumen at https://lumen.laravel.com/.
 
 # Installation
 - Clone the repo on your local machine
