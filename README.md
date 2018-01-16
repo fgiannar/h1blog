@@ -5,18 +5,24 @@ More about Lumen at https://lumen.laravel.com/.
 
 # Installation
 - Clone the repo on your local machine
+
 ```git clone https://github.com/fgiannar/h1blog.git```
 - Move to project's directory
+
 ```cd h1blog```
 - Copy .env_sample  to .env and update all MAIL_* envs to match your smtp credentials and ADMIN_MAIL to your email.
+
 ```cp .env_sample .env```
 - Build image and start containers:
+
 ```docker-compose build```
 
 ```docker-compose up -d```
 - Install project dependencies:
+
 ```docker-compose exec app composer install```
 - Create database tables and populate them with dummy data:
+
 ```docker-compose exec app php artisan:migrate --seed```
 
 API's endpoints can be now accessed at baseurl: http://0.0.0.0:8009/api/v1
