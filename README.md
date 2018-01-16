@@ -13,6 +13,8 @@ More about Lumen at https://lumen.laravel.com/.
 - Build image and start containers:
 ```docker-compose build```
 ```docker-compose up -d```
+- Install project dependencies:
+```docker-compose exec app composer install```
 - Create database tables and populate them with dummy data:
 ```docker-compose exec app php artisan:migrate --seed```
 
